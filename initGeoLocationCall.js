@@ -14,9 +14,9 @@
         //   3: timed out
     }
     var geoOptions = {
-        maximumAge: 20 * 1000, //optional parameter.in mili seconds. to get users updated location after some time
+        maximumAge: 24 * 60 * 60 * 1000, //optional parameter.in mili seconds. to get users updated location after some time
         timeout: 10 * 1000,
-        enableHighAccuracy: true//uses more battery
+        enableHighAccuracy: true //uses more battery
     }
     window.addEventListener('load', function() {
         if (('geolocation' in navigator)) {
