@@ -20,7 +20,7 @@
     }
     window.addEventListener('load', function() {
         if (('geolocation' in navigator)) {
-            navigator.geolocation.getCurrentPosition(geoSuccessCb, geoErrorCb, geoOptions); //one time consent call
+            navigator.geolocation.getCurrentPosition(geoSuccessCb, geoErrorCb); //one time consent call
             //var watcherId = navigator.geolocation.watchPosition(geoSuccessCb, geoErrorCb); //setting a watcher on user's position.Its consumes more battery
             //clearWatch(watcherId)//this stops watcher. will save batetry
         }
